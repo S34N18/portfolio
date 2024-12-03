@@ -1,0 +1,32 @@
+.container {
+  text-align: center;
+}
+html {
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.87) !important;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+video {
+  width: 80%;
+  max-width: 800px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 40px 30px rgba(222, 224, 185, 0.1);
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeCodeDev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>bun</h2>
+        <h3>Screen Share </h3>
+        <div class="video-container">
+            <video id="screen-preview" autoplay controls></video>
+            <button id="startBtn" onclick="startScreenShare()">Start Screen Share</button>
+            <button id="stopBtn" onclick="stopScreenShare()" style="display:none;">Stop Screen Share</button>
+            <p id="error-message"><dandan/p>
+        </div>
+        <p id="error-message" style="color: red;"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

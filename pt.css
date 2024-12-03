@@ -1,0 +1,193 @@
+
+:root {
+    --primary-color: chartreuse;
+    --background-dark: #333;
+    --text-light: #f4f4f4;
+   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #333;
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: var(--background-dark);
+    color: var(--text-light);
+}
+
+
+/*navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: var(--background-dark);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+    
+}
+
+
+
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.navbar-links a:hover::after {
+    width: 100%;
+}
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.toggle-line {
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: var(--background-dark);
+        padding: 20px;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+}
+
+    .navbar{
+    border-bottom: 3px solid chartreuse;
+     }
+   
+
+
+/*TEXT CONTENT*/
+.text1{
+    padding: 20px;
+}
+
+
+.text1 h1{
+   color: chartreuse;
+   font-weight: 500;
+}
+.text1 p{
+    color: #f4f4f4;
+}
+
+
+.text1 :hover{
+    color: var(--primary-color);
+    transition: color 0.5s ease;
+}
+
+.text1 h1:hover{
+    color: var(--text-light);
+    transition: color  0.5s ease;
+
+}
+
+/*Name styling*/
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: chartreuse; }
+}
+
+#name {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+#name h2 {
+    overflow: hidden;
+    border-right: 3px solid chartreuse;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.1em;
+    animation: 
+        typing 3s steps(20, end),
+        blink-caret 0.75s step-end infinite;
+    max-width: fit-content;
+    color: chartreuse;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

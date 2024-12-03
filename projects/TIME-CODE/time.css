@@ -1,0 +1,41 @@
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282828;
+    transition: background-color 1s ease;
+  
+}
+
+#clock-container {
+    text-align: center;
+}
+
+#greeting {
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#time {
+    color: #ffffff;
+    font-size: 144px;
+    font-weight: 300;
+}
+
+#date {
+    color: #ffffff;
+    font-size: 24px;
+    margin-top: 20px;
+}
